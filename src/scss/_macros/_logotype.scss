@@ -1,0 +1,16 @@
+// LOGOTYPE :: START
+
+.logo {
+	&__link {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	&__img {
+		display: block;
+		max-width: 348px;
+		height: auto;
+	}
+}
+
+// LOGOTYPE :: END
