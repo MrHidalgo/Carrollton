@@ -110,6 +110,10 @@
 		padding-left: 50px;
 		padding-right: 50px;
 		padding-bottom: 15px;
+		@include adaptive(767) {
+			padding-left: 0;
+			padding-right: 0;
+		}
 
 		&-btn {
 			z-index: 10;
@@ -129,6 +133,9 @@
 
 			&--prev {
 				left: 0;
+				@include adaptive(767) {
+					left: 5px;
+				}
 
 				.fas {
 					left: -1px;
@@ -137,6 +144,9 @@
 
 			&--next {
 				right: 0;
+				@include adaptive(767) {
+					right: 5px;
+				}
 
 				.fas {
 					right: -1px;
@@ -159,6 +169,9 @@
 		height: 170px;
 		width: 100%;
 		background-color: #ffffff;
+		@include adaptive(767) {
+			height: 200px;
+		}
 
 		&:hover {
 			img {
@@ -189,6 +202,9 @@
 			@include transition(transform 0.6s);
 			@include adaptive(1365) {
 				font-size: 50px;
+			}
+			@include adaptive(767) {
+				font-size: 40px;
 			}
 		}
 	}

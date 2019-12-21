@@ -759,7 +759,15 @@ picture {
   padding-bottom: 15px;
 }
 
-/* line 114, src/scss/_components/_say.scss */
+@media screen and (max-width: 767px) {
+  /* line 108, src/scss/_components/_say.scss */
+  .say__slider {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 118, src/scss/_components/_say.scss */
 .say__slider-btn {
   z-index: 10;
   position: absolute;
@@ -790,33 +798,47 @@ picture {
   color: #ffffff;
 }
 
-/* line 130, src/scss/_components/_say.scss */
+/* line 134, src/scss/_components/_say.scss */
 .say__slider-btn--prev {
   left: 0;
 }
 
-/* line 133, src/scss/_components/_say.scss */
+@media screen and (max-width: 767px) {
+  /* line 134, src/scss/_components/_say.scss */
+  .say__slider-btn--prev {
+    left: 5px;
+  }
+}
+
+/* line 140, src/scss/_components/_say.scss */
 .say__slider-btn--prev .fas {
   left: -1px;
 }
 
-/* line 138, src/scss/_components/_say.scss */
+/* line 145, src/scss/_components/_say.scss */
 .say__slider-btn--next {
   right: 0;
 }
 
-/* line 141, src/scss/_components/_say.scss */
+@media screen and (max-width: 767px) {
+  /* line 145, src/scss/_components/_say.scss */
+  .say__slider-btn--next {
+    right: 5px;
+  }
+}
+
+/* line 151, src/scss/_components/_say.scss */
 .say__slider-btn--next .fas {
   right: -1px;
 }
 
-/* line 146, src/scss/_components/_say.scss */
+/* line 156, src/scss/_components/_say.scss */
 .say__slider-btn .fas {
   position: relative;
   color: #ffffff;
 }
 
-/* line 153, src/scss/_components/_say.scss */
+/* line 163, src/scss/_components/_say.scss */
 .say__box {
   overflow: hidden;
   position: relative;
@@ -837,7 +859,14 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 164, src/scss/_components/_say.scss */
+@media screen and (max-width: 767px) {
+  /* line 163, src/scss/_components/_say.scss */
+  .say__box {
+    height: 200px;
+  }
+}
+
+/* line 177, src/scss/_components/_say.scss */
 .say__box:hover img {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -849,7 +878,7 @@ picture {
   transition: transform 0.55s ease-in-out, -webkit-transform 0.55s ease-in-out;
 }
 
-/* line 169, src/scss/_components/_say.scss */
+/* line 182, src/scss/_components/_say.scss */
 .say__box:hover .fas {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
@@ -861,7 +890,7 @@ picture {
   transition: transform 0.55s ease-in-out, -webkit-transform 0.55s ease-in-out;
 }
 
-/* line 175, src/scss/_components/_say.scss */
+/* line 188, src/scss/_components/_say.scss */
 .say__box img {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -875,7 +904,7 @@ picture {
   transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
 }
 
-/* line 182, src/scss/_components/_say.scss */
+/* line 195, src/scss/_components/_say.scss */
 .say__box .fas {
   z-index: 10;
   position: absolute;
@@ -894,13 +923,20 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 182, src/scss/_components/_say.scss */
+  /* line 195, src/scss/_components/_say.scss */
   .say__box .fas {
     font-size: 50px;
   }
 }
 
-/* line 196, src/scss/_components/_say.scss */
+@media screen and (max-width: 767px) {
+  /* line 195, src/scss/_components/_say.scss */
+  .say__box .fas {
+    font-size: 40px;
+  }
+}
+
+/* line 212, src/scss/_components/_say.scss */
 .say__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -929,7 +965,7 @@ picture {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 211, src/scss/_components/_say.scss */
+/* line 227, src/scss/_components/_say.scss */
 .say__btn:hover {
   background-color: #ffffff;
   color: #5edc56;
@@ -938,7 +974,7 @@ picture {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 217, src/scss/_components/_say.scss */
+/* line 233, src/scss/_components/_say.scss */
 .say__btn-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -954,12 +990,12 @@ picture {
           justify-content: center;
 }
 
-/* line 225, src/scss/_components/_say.scss */
+/* line 241, src/scss/_components/_say.scss */
 .say .swiper-container {
   padding-bottom: 50px;
 }
 
-/* line 229, src/scss/_components/_say.scss */
+/* line 245, src/scss/_components/_say.scss */
 .say .swiper-pagination {
   display: -webkit-box;
   display: -webkit-flex;
@@ -975,7 +1011,7 @@ picture {
           justify-content: center;
 }
 
-/* line 234, src/scss/_components/_say.scss */
+/* line 250, src/scss/_components/_say.scss */
 .say .swiper-pagination-bullet {
   opacity: 1;
   width: 6px;
@@ -990,7 +1026,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 244, src/scss/_components/_say.scss */
+/* line 260, src/scss/_components/_say.scss */
 .say .swiper-pagination-bullet-active {
   background-color: #000000;
   -webkit-transition: background-color 0.3s ease-in-out;
