@@ -1,0 +1,169 @@
+// SECTION meet :: START
+
+.meet {
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+
+		&-left,
+		&-right {
+			width: 50%;
+			@include adaptive(1023) {
+				width: 100%;
+			}
+		}
+
+		&-right {
+			padding-left: 30px;
+			@include adaptive(1023) {
+				padding-left: 0;
+				padding-top: 30px;
+			}
+		}
+	}
+
+	&__title {
+		text-align: center;
+	}
+
+	&__video {
+		overflow: hidden;
+		position: relative;
+		height: 350px;
+		@include adaptive(767) {
+			height: 200px;
+		}
+
+		iframe {
+			@extend %imageResCoverAbs;
+		}
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 12px 24px;
+		background-color: rgba(0,0,0,0);
+		border-radius: 2em;
+		border-style: solid;
+		border-width: 2px;
+		border-color: #39d52d;
+		font-size: 21px;
+		font-weight: 600;
+		color: #39d52d;
+		@include transition(background-color, color);
+		@include adaptive(767) {
+			padding-left: 12px;
+			padding-right: 12px;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 16px;
+		}
+
+		&:hover {
+			background-color: #39d52d;
+			color: #fff;
+			@include transition(background-color, color);
+		}
+
+		&-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
+	}
+
+	&__name {
+		padding-bottom: 25px;
+		font-size: 30px;
+		font-weight: 500;
+		@include adaptive(767) {
+			font-size: 26px;
+		}
+	}
+
+	&__about {
+		padding-bottom: 30px;
+		font-size: 20px;
+		font-weight: 600;
+		@include adaptive(767) {
+			font-size: 18px;
+		}
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 50px;
+
+		&-head {
+			display: flex;
+			align-items: center;
+			padding: 10px 20px;
+
+			> div {
+				&:nth-of-type(1) {
+					width: 50px;
+				}
+				&:nth-of-type(2) {
+					flex: 1;
+					min-width: 1px;
+					max-width: 100%;
+				}
+				&:nth-of-type(3) {
+					width: 40px;
+				}
+			}
+
+			p {
+				color: #1c2022;
+				font-size: 19px;
+				font-weight: 700;
+				@include adaptive(767) {
+					font-size: 17px;
+				}
+			}
+
+			.fab {
+				font-size: 17px;
+				color: #1da1f2;
+				@include adaptive(767) {
+					font-size: 15px;
+				}
+			}
+		}
+
+		&-body {
+			padding: 10px 20px;
+			border-top: 1px solid #000;
+
+			p {
+				font-size: 19px;
+				font-weight: 600;
+				line-height: 1.2;
+				@include adaptive(767) {
+					font-size: 17px;
+				}
+			}
+		}
+
+		&-icon {
+			overflow: hidden;
+			position: relative;
+			width: 36px;
+			height: 36px;
+			border-radius: 50%;
+
+			img {
+				@extend %imageResCoverAbs;
+			}
+		}
+	}
+}
+
+// SECTION meet :: END
