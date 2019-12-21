@@ -1,13 +1,28 @@
 // TITLE :: START
 
 .c-title {
-  &__text {
-    &-wrap {}
-  }
+	padding-bottom: 40px;
+	color: #ffffff;
+	font-size: 45px;
+	font-weight: 300;
+	text-transform: uppercase;
+	@include adaptive(1439) {
+		font-size: 40px;
+	}
+	@include adaptive(1023) {
+		font-size: 35px;
+		text-align: center;
+	}
+	@include adaptive(767) {
+		text-align: center;
+	}
+	@include adaptive(575) {
+		font-size: 30px;
+	}
 
-  &__icon {
-    &-wrap {}
-  }
+  &--blue {
+		color: #071689;
+	}
 }
 
 // TITLE :: END

@@ -1,0 +1,232 @@
+// SECTION projects :: START
+
+.projects {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #7a7a7a;
+
+	&__title {
+		padding-bottom: 25px;
+		text-align: center;
+	}
+
+	&__desc {
+		padding-bottom: 50px;
+		text-align: center;
+		color: #ffffff;
+		font-size: 25px;
+		@include adaptive(1279) {
+			font-size: 22px;
+		}
+		@include adaptive(767) {
+			font-size: 18px;
+		}
+	}
+
+	&__block {
+		&-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			background-color: #ffffff;
+			margin-bottom: 50px;
+		}
+
+		&-left,
+		&-right {
+			position: relative;
+			width: 50%;
+			min-height: 375px;
+			@include adaptive(767) {
+				width: 100%;
+				min-height: unset;
+			}
+		}
+
+		&-left {
+			overflow: hidden;
+			@include adaptive(767) {
+				height: 250px;
+			}
+
+			img {
+				@extend %imageResCoverAbs;
+			}
+		}
+	}
+
+	&__slider {
+		position: relative;
+		height: 100%;
+		padding: 30px 50px;
+		@include adaptive(767) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		&-btn {
+			z-index: 10;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			background-color: transparent;
+			font-size: 16px;
+			color: #ffffff;
+			@include adaptive(767) {
+				display: none;
+			}
+
+			&--prev {
+				left: 0;
+				@include adaptive(767) {
+					left: 5px;
+				}
+
+				.fas {
+					left: -1px;
+				}
+			}
+
+			&--next {
+				right: 0;
+				@include adaptive(767) {
+					right: 5px;
+				}
+
+				.fas {
+					right: -1px;
+				}
+			}
+
+			.fas {
+				position: relative;
+				font-size: 20px;
+				color: #f0f0f0;
+			}
+		}
+	}
+
+	&__box {
+		&-title {
+			padding-bottom: 35px;
+			color: #000000;
+			text-align: center;
+			font-size: 35px;
+			font-weight: 700;
+			line-height: 1;
+			@include adaptive(1023) {
+				font-size: 32px;
+			}
+			@include adaptive(767) {
+				font-size: 30px;
+			}
+		}
+
+		&-desc {
+			padding-bottom: 30px;
+			text-align: center;
+			color: #000;
+			font-size: 20px;
+			font-weight: 600;
+			@include adaptive(1023) {
+				font-size: 18px;
+			}
+			@include adaptive(767) {
+				font-size: 16px;
+			}
+		}
+
+		&-btn {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			max-width: 165px;
+			height: 50px;
+			padding: 12px 24px;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 3px;
+			color: #000;
+			font-size: 23px;
+			border: 2px solid #000;
+			@include transition(background-color, color);
+			@include adaptive(1023) {
+				font-size: 21px;
+			}
+			@include adaptive(767) {
+				font-size: 19px;
+			}
+
+			&:hover {
+				background-color: #000000;
+				color: #fff;
+				@include transition(background-color, color);
+			}
+		}
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 12px 24px;
+		background-color: rgba(0,0,0,0);
+		border-radius: 2em;
+		border-style: solid;
+		border-width: 2px;
+		border-color: #39d52d;
+		font-weight: 500;
+		font-size: 15px;
+		color: #39d52d;
+		@include transition(background-color, color);
+
+		&:hover {
+			background-color: #39d52d;
+			color: #fff;
+			@include transition(background-color, color);
+		}
+
+		&-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	.swiper {
+		&-container {
+			padding-bottom: 50px;
+		}
+
+		&-pagination {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&-bullet {
+				opacity: 1;
+				outline: none;
+				width: 10px;
+				height: 10px;
+				margin-left: 8px !important;
+				margin-right: 8px !important;
+				border-radius: 50%;
+				background-color: #cccccc;
+				@include transition(background-color);
+
+				&-active {
+					background-color: #000000;
+					@include transition(background-color);
+				}
+			}
+		}
+	}
+}
+
+// SECTION projects :: END

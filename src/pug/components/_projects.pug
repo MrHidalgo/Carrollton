@@ -1,0 +1,45 @@
+// SECTION projects :: START
+
+section#projects.projects
+	.c-grid
+		.projects__wrapper
+
+			h2.projects__title.c-title OUR PROJECTS
+			p.projects__desc We believe in helping you improve overall health with Oral health being our field of expertise.
+
+			.projects__block-wrapper
+				.projects__block-left
+					img(src="img/img-projects.jpg" alt="")
+
+				.projects__block-right
+
+					.projects__slider
+
+						a.projects__slider-btn.projects__slider-btn--prev(href="#")
+							i.fas.fa-chevron-left
+						a.projects__slider-btn.projects__slider-btn--next(href="#")
+							i.fas.fa-chevron-right
+
+						mixin swiperContent()
+							.swiper-slide
+								.projects__box
+									p.projects__box-title No Cavity Club
+									p.projects__box-desc To encourage our patients towards healthy lifestyle, I launched “No Cavity Club.” If you do not have cavities for 4 consecutive visits we will enroll you in the “No Cavity Club” and you will be entered in a raffle.
+									a.projects__box-btn(href="#") Click Here
+							.swiper-slide
+								.projects__box
+									p.projects__box-title Project Smile
+									p.projects__box-desc Project smiles is one of our favorite projects. At the beginning of October every year, we take applications for Project Smile. The announcement is made on the Carrollton Smiles Facebook Page.
+									a.projects__box-btn(href="#") Click Here
+							.swiper-slide
+								.projects__box
+									p.projects__box-title Books for Bucks
+									p.projects__box-desc As a part of “Books for Bucks” at Carrollton Smiles, we encourage our young readers to read a few pages of their favorite book for five minutes to one of our team members. Giving them a chance to win prizes.
+									a.projects__box-btn(href="#") Click Here
+
+						+swiper('projectSlider', 'swiperContent', true, false, false)
+
+			.projects__btn-wrapper
+				a.projects__btn(href="#") Read More About Our Charity Work
+
+// SECTION projects :: END

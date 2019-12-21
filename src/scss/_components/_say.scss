@@ -65,23 +65,6 @@
 		color: #ffffff;
 	}
 
-	&__title {
-		padding-bottom: 40px;
-		font-size: 45px;
-		font-weight: 300;
-		text-transform: uppercase;
-		@include adaptive(1439) {
-			font-size: 40px;
-		}
-		@include adaptive(1023) {
-			font-size: 35px;
-			text-align: center;
-		}
-		@include adaptive(575) {
-			font-size: 30px;
-		}
-	}
-
 	&__desc {
 		padding-bottom: 25px;
 		font-size: 25px;
@@ -249,6 +232,7 @@
 
 			&-bullet {
 				opacity: 1;
+				outline: none;
 				width: 6px;
 				height: 6px;
 				margin-left: 8px !important;

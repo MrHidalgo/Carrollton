@@ -113,6 +113,30 @@ var initSwiper = function initSwiper() {
     }
   });
 
+  var mySwiperProject = new Swiper('.projectSlider', {
+    loop: true,
+    grabCursor: false,
+    effect: 'flip',
+    flipEffect: {
+      rotate: 30,
+      slideShadows: false
+    },
+    autoplay: {
+      delay: 4000
+    },
+    speed: 850,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    navigation: {
+      nextEl: '.projects__slider-btn--next',
+      prevEl: '.projects__slider-btn--prev'
+    }
+  });
+
   /*const mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     wrapperClass: "swiper-wrapper",

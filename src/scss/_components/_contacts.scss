@@ -26,20 +26,8 @@
 	}
 
 	&__title {
-		padding-bottom: 20px;
-		color: #071689;
-		font-size: 45px;
-		font-weight: 300;
-		text-transform: uppercase;
-		@include adaptive(1439) {
-			font-size: 40px;
-		}
 		@include adaptive(1023) {
-			font-size: 35px;
 			text-align: center;
-		}
-		@include adaptive(575) {
-			font-size: 30px;
 		}
 	}
 

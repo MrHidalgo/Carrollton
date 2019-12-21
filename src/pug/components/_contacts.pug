@@ -5,18 +5,18 @@ section#contacts.contacts
 		.contacts__wrapper
 			.contacts__wrapper-left
 
-				h2.contacts__title READY TO SCHEDULE?
+				h2.contacts__title.c-title.c-title--blue READY TO SCHEDULE?
 				p.contacts__subtitle Please fill out the following information
 
 			.contacts__wrapper-right
 
 				form.contacts__form(action='' autocomplete='off')
 					div
-						input(type='text' name='' placeholder='Name*')
+						input(type='text' name='' placeholder='Name*' required)
 					div
-						input(type='text' name='' placeholder='Phone Number*')
+						input(type='tel' name='' placeholder='Phone Number*' required)
 					div
-						input(type='text' name='' placeholder='E-main*')
+						input(type='email' name='' placeholder='E-main*' required)
 					div
 						textarea(name='' placeholder='How can we help?')
 					div
