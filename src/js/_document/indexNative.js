@@ -19,9 +19,7 @@
 	 */
 	const initNative = () => {
 		// default
-		initWebFontLoader();
 		initPreventBehavior();
-		initSvg4everybody();
 		// ==========================================
 
 		// lib

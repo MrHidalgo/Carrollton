@@ -1,8 +1,7 @@
 /*
 *
 * Include :
-*
-* - bower-webfontloader;
-* - svg4everybody;
+* - swiper.min.js;
+* - magnific-popup;
 *
 * */

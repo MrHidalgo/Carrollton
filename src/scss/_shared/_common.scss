@@ -6,4 +6,83 @@
 	}
 }
 
+.social {
+	display: flex;
+	align-items: center;
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 36px;
+		height: 36px;
+		margin-right: 5px;
+		border-radius: 50%;
+		border-style: solid;
+		border-width: 2px 2px 2px 2px;
+		border-color: #071689;
+		background-color: transparent;
+		@include transition(border-color, background-color);
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+
+		&--facebook {
+			&:hover {
+				border-color: #3b5998;
+				background-color: #3b5998;
+				@include transition(border-color, background-color);
+
+				.fab {
+					color: #ffffff;
+					@include transition(color);
+				}
+			}
+		}
+		&--twitter {
+			&:hover {
+				border-color: #1da1f2;
+				background-color: #1da1f2;
+				@include transition(border-color, background-color);
+
+				.fab {
+					color: #ffffff;
+					@include transition(color);
+				}
+			}
+		}
+		&--instagram {
+			&:hover {
+				border-color: #e1306c;
+				background-color: #e1306c;
+				@include transition(border-color, background-color);
+
+				.fab {
+					color: #ffffff;
+					@include transition(color);
+				}
+			}
+		}
+		&--youtube {
+			&:hover {
+				border-color: #ff0000;
+				background-color: #ff0000;
+				@include transition(border-color, background-color);
+
+				.fab {
+					color: #ffffff;
+					@include transition(color);
+				}
+			}
+		}
+
+		.fab {
+			color: #071689;
+			font-size: 16px;
+			@include transition(color);
+		}
+	}
+}
+
 // COMMON :: END

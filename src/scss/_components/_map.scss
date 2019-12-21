@@ -1,0 +1,64 @@
+// SECTION map :: START
+
+.map {
+	background-color: #f3f3fc;
+	background-image: url('../img/img-map-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		height: 612px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+
+		&-left {
+			width: 100%;
+			max-width: 70%;
+
+			iframe {
+				display: flex;
+				width: 100%;
+				height: 340px;
+			}
+		}
+
+		&-right {
+			width: 100%;
+			max-width: 30%;
+			padding-left: 30px;
+		}
+	}
+
+	&__title {
+		padding-bottom: 20px;
+		color: #3a3a3a;
+		line-height: 1;
+		font-size: 20px;
+		font-weight: 300;
+
+		.fas,
+		.far {
+			margin-right: 5px;
+			color: #39d52d;
+			font-size: 20px;
+		}
+	}
+
+	&__desc {
+		display: block;
+		padding-bottom: 30px;
+		color: #1e73be;
+		font-size: 16px;
+		@include transition(color);
+
+		&:hover {
+			color: #000;
+			@include transition(color);
+		}
+	}
+}
+
+// SECTION map :: END
