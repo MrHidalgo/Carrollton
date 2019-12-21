@@ -1,0 +1,144 @@
+// SECTION contacts :: START
+
+.contacts {
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+
+		&-left {
+			width: 100%;
+			max-width: calc(100% - 680px);
+			@include adaptive(1023) {
+				max-width: 100%;
+			}
+		}
+
+		&-right {
+			width: 100%;
+			max-width: 680px;
+			@include adaptive(1023) {
+				max-width: 100%;
+			}
+		}
+	}
+
+	&__title {
+		padding-bottom: 20px;
+		color: #071689;
+		font-size: 45px;
+		font-weight: 300;
+		text-transform: uppercase;
+		@include adaptive(1439) {
+			font-size: 40px;
+		}
+		@include adaptive(1023) {
+			font-size: 35px;
+			text-align: center;
+		}
+		@include adaptive(575) {
+			font-size: 30px;
+		}
+	}
+
+	&__subtitle {
+		padding-bottom: 40px;
+		text-align: center;
+		font-size: 25px;
+		color: #3a3a3a;
+		@include adaptive(1439) {
+			font-size: 22px;
+		}
+		@include adaptive(767) {
+			font-size: 20px;
+		}
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 40px;
+		background-image: url('../img/img-contacts-form-bg.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		@include adaptive(767) {
+			padding: 20px 15px;
+		}
+
+		> div {
+			position: relative;
+			display: flex;
+			padding-bottom: 10px;
+
+			&:last-of-type {
+				padding-bottom: 0;
+			}
+		}
+
+		input,
+		textarea {
+			outline: none;
+			width: 100%;
+			max-width: 100%;
+			min-height: 40px;
+			padding: 5px 14px;
+			border-radius: 3px;
+			border: 1px solid #818a91;
+			background-color: #fff;
+			box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+			font-size: 14px;
+			color: #222;
+			@include inputPlaceholder {
+				font-size: 14px;
+				color: #666;
+			}
+			@include transition(border-color);
+
+			&:focus {
+				border-color: #bfbfbf;
+				@include transition(border-color);
+			}
+		}
+
+		textarea {
+			resize: none;
+			min-height: 90px;
+		}
+
+		button {
+			outline: none;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 40px;
+			padding: 12px 24px;
+			margin-left: auto;
+			margin-right: auto;
+			box-shadow: none;
+			border: 2px solid #071689;
+			background-color: #071689;
+			border-radius: 3px;
+			font-weight: 500;
+			font-size: 15px;
+			color: #fff;
+			@include transition(background-color, color);
+			@include adaptive(767) {
+				width: 100%;
+				max-width: 100%;
+			}
+
+			&:hover {
+				background-color: transparent;
+				color: #071689;
+				@include transition(background-color, color);
+			}
+		}
+	}
+}
+
+// SECTION contacts :: END

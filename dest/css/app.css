@@ -382,7 +382,17 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 4, src/scss/_macros/_logotype.scss */
+@media screen and (max-width: 767px) {
+  /* line 6, src/scss/_macros/_logotype.scss */
+  .logo.logo--footer .logo__img {
+    max-width: -webkit-calc(2048px / 10);
+    max-width: calc(2048px / 10);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 16, src/scss/_macros/_logotype.scss */
 .logo__link {
   display: -webkit-box;
   display: -webkit-flex;
@@ -394,21 +404,11 @@ picture {
           align-items: flex-start;
 }
 
-/* line 12, src/scss/_macros/_logotype.scss */
+/* line 21, src/scss/_macros/_logotype.scss */
 .logo__img {
   display: block;
   max-width: 348px;
   height: auto;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 12, src/scss/_macros/_logotype.scss */
-  .logo__img {
-    max-width: -webkit-calc(2048px / 10);
-    max-width: calc(2048px / 10);
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 /* line 3, src/scss/_components/_footer.scss */
@@ -474,6 +474,267 @@ picture {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+/* line 3, src/scss/_components/_contacts.scss */
+.contacts {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* line 7, src/scss/_components/_contacts.scss */
+.contacts__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+/* line 11, src/scss/_components/_contacts.scss */
+.contacts__wrapper-left {
+  width: 100%;
+  max-width: -webkit-calc(100% - 680px);
+  max-width: calc(100% - 680px);
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 11, src/scss/_components/_contacts.scss */
+  .contacts__wrapper-left {
+    max-width: 100%;
+  }
+}
+
+/* line 19, src/scss/_components/_contacts.scss */
+.contacts__wrapper-right {
+  width: 100%;
+  max-width: 680px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 19, src/scss/_components/_contacts.scss */
+  .contacts__wrapper-right {
+    max-width: 100%;
+  }
+}
+
+/* line 28, src/scss/_components/_contacts.scss */
+.contacts__title {
+  padding-bottom: 20px;
+  color: #071689;
+  font-size: 45px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1439px) {
+  /* line 28, src/scss/_components/_contacts.scss */
+  .contacts__title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 28, src/scss/_components/_contacts.scss */
+  .contacts__title {
+    font-size: 35px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 28, src/scss/_components/_contacts.scss */
+  .contacts__title {
+    font-size: 30px;
+  }
+}
+
+/* line 46, src/scss/_components/_contacts.scss */
+.contacts__subtitle {
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 25px;
+  color: #3a3a3a;
+}
+
+@media screen and (max-width: 1439px) {
+  /* line 46, src/scss/_components/_contacts.scss */
+  .contacts__subtitle {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 46, src/scss/_components/_contacts.scss */
+  .contacts__subtitle {
+    font-size: 20px;
+  }
+}
+
+/* line 59, src/scss/_components/_contacts.scss */
+.contacts__form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 40px;
+  background-image: url("../img/img-contacts-form-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 59, src/scss/_components/_contacts.scss */
+  .contacts__form {
+    padding: 20px 15px;
+  }
+}
+
+/* line 72, src/scss/_components/_contacts.scss */
+.contacts__form > div {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+/* line 77, src/scss/_components/_contacts.scss */
+.contacts__form > div:last-of-type {
+  padding-bottom: 0;
+}
+
+/* line 82, src/scss/_components/_contacts.scss */
+.contacts__form input,
+.contacts__form textarea {
+  outline: none;
+  width: 100%;
+  max-width: 100%;
+  min-height: 40px;
+  padding: 5px 14px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px solid #818a91;
+  background-color: #fff;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: #222;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.contacts__form input.placeholder,
+.contacts__form textarea.placeholder {
+  font-size: 14px;
+  color: #666;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.contacts__form input:-moz-placeholder,
+.contacts__form textarea:-moz-placeholder {
+  font-size: 14px;
+  color: #666;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.contacts__form input::-moz-placeholder,
+.contacts__form textarea::-moz-placeholder {
+  font-size: 14px;
+  color: #666;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.contacts__form input:-ms-input-placeholder,
+.contacts__form textarea:-ms-input-placeholder {
+  font-size: 14px;
+  color: #666;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.contacts__form input::-webkit-input-placeholder,
+.contacts__form textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #666;
+}
+
+/* line 101, src/scss/_components/_contacts.scss */
+.contacts__form input:focus,
+.contacts__form textarea:focus {
+  border-color: #bfbfbf;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 107, src/scss/_components/_contacts.scss */
+.contacts__form textarea {
+  resize: none;
+  min-height: 90px;
+}
+
+/* line 112, src/scss/_components/_contacts.scss */
+.contacts__form button {
+  outline: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 40px;
+  padding: 12px 24px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid #071689;
+  background-color: #071689;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 112, src/scss/_components/_contacts.scss */
+  .contacts__form button {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* line 135, src/scss/_components/_contacts.scss */
+.contacts__form button:hover {
+  background-color: transparent;
+  color: #071689;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 /* line 3, src/scss/_components/_map.scss */
@@ -558,8 +819,15 @@ picture {
   }
 }
 
+@media screen and (max-width: 767px) {
+  /* line 47, src/scss/_components/_map.scss */
+  .map__block {
+    max-width: 100%;
+  }
+}
+
 @media screen and (max-width: 1023px) {
-  /* line 53, src/scss/_components/_map.scss */
+  /* line 56, src/scss/_components/_map.scss */
   .map__block-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -571,7 +839,7 @@ picture {
   }
 }
 
-/* line 61, src/scss/_components/_map.scss */
+/* line 64, src/scss/_components/_map.scss */
 .map__title {
   padding-bottom: 20px;
   color: #3a3a3a;
@@ -580,7 +848,14 @@ picture {
   font-weight: 300;
 }
 
-/* line 68, src/scss/_components/_map.scss */
+@media screen and (max-width: 767px) {
+  /* line 64, src/scss/_components/_map.scss */
+  .map__title {
+    text-align: center;
+  }
+}
+
+/* line 74, src/scss/_components/_map.scss */
 .map__title .fas,
 .map__title .far {
   margin-right: 5px;
@@ -588,7 +863,7 @@ picture {
   font-size: 20px;
 }
 
-/* line 76, src/scss/_components/_map.scss */
+/* line 82, src/scss/_components/_map.scss */
 .map__desc {
   display: block;
   padding-bottom: 30px;
@@ -599,7 +874,14 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 83, src/scss/_components/_map.scss */
+@media screen and (max-width: 767px) {
+  /* line 82, src/scss/_components/_map.scss */
+  .map__desc {
+    text-align: center;
+  }
+}
+
+/* line 92, src/scss/_components/_map.scss */
 .map__desc:hover {
   color: #000;
   -webkit-transition: color 0.3s ease-in-out;
