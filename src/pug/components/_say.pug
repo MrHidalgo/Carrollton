@@ -1,0 +1,51 @@
+// SECTION say :: START
+
+section#say.say
+	.c-grid-fluid
+		.say__wrapper
+			.say__wrapper-left
+				div
+					h2.say__title OUR PATIENTS SAY
+					p.say__desc "Carrollton smiles is a great place doctor sirisha bhandaru and staff are friendly and excellent and nice and cares about there patients."
+					p.say__name!= "Yzaak Russell<br>Dental Service"
+
+			.say__wrapper-right
+
+				.say__slider
+					a.say__slider-btn.say__slider-btn--prev(href="")
+						i.fas.fa-chevron-left
+					a.say__slider-btn.say__slider-btn--next(href="")
+						i.fas.fa-chevron-right
+
+					mixin swiperContent()
+						.swiper-slide
+							a.say__box(href="https://vimeo.com/353880606" data-effect='mfp-zoom-in' popup-video-js)
+								img(src="img/img-say-poster-1.png" alt="")
+								i.fas.fa-play
+						.swiper-slide
+							a.say__box(href="https://vimeo.com/353880583" data-effect='mfp-zoom-in' popup-video-js)
+								img(src="img/img-say-poster-2.png" alt="")
+								i.fas.fa-play
+						.swiper-slide
+							a.say__box(href="https://vimeo.com/353880587" data-effect='mfp-zoom-in' popup-video-js)
+								img(src="img/img-say-poster-3.png" alt="")
+								i.fas.fa-play
+						.swiper-slide
+							a.say__box(href="https://vimeo.com/353880598" data-effect='mfp-zoom-in' popup-video-js)
+								img(src="img/img-say-poster-4.png" alt="")
+								i.fas.fa-play
+						.swiper-slide
+							a.say__box(href="https://vimeo.com/353880575" data-effect='mfp-zoom-in' popup-video-js)
+								img(src="img/img-say-poster-5.png" alt="")
+								i.fas.fa-play
+						.swiper-slide
+							a.say__box(href="https://vimeo.com/353880614" data-effect='mfp-zoom-in' popup-video-js)
+								img(src="img/img-say-poster-6.png" alt="")
+								i.fas.fa-play
+
+					+swiper('saySlider', 'swiperContent', true, false, false)
+
+				.say__btn-wrapper
+					a.say__btn(href="#") View More Testimonials
+
+// SECTION say :: END

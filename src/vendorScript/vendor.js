@@ -2,6 +2,7 @@
 *
 * Include :
 * - swiper.min.js;
-* - magnific-popup;
+* - bootstrap.js;
+* - poper.js;
 *
 * */

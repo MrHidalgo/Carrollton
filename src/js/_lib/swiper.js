@@ -7,7 +7,35 @@
  */
 const initSwiper = () => {
 
-  const mySwiper = new Swiper('.swiper-container', {
+  const mySwiperSay = new Swiper('.saySlider', {
+    loop: true,
+    grabCursor: false,
+    effect: 'slide',
+		speed: 700,
+    slidesPerView: 3,
+    spaceBetween: 15,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 15
+      }
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    navigation: {
+      nextEl: '.say__slider-btn--next',
+      prevEl: '.say__slider-btn--prev',
+    }
+  });
+
+  /*const mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     wrapperClass: "swiper-wrapper",
     slideClass: "swiper-slide",
@@ -84,5 +112,5 @@ const initSwiper = () => {
         console.log("slideChange");
       },
     }
-  });
+  });*/
 };

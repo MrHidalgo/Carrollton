@@ -87,7 +87,7 @@
 		@include transition(color);
 		@include adaptive(767) {
 			text-align: center;
-		}
+		}w
 
 		&:hover {
 			color: #000;

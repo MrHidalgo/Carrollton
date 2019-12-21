@@ -1,0 +1,253 @@
+// SECTION say :: START
+
+.say {
+	background-color: #5edc56;
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+
+		&-left,
+		&-right {
+			width: 50%;
+			height: 100%;
+			@include adaptive(1279) {
+				width: 100%;
+			}
+		}
+
+		&-left {
+			position: relative;
+			padding-left: 50px;
+			padding-right: 50px;
+			@include adaptive(767) {
+				padding-left: 0;
+				padding-right: 0;
+			}
+
+			&:before {
+				content: '';
+				z-index: 0;
+				opacity: 0.5;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-image: url('../img/img-bg-logo.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+			}
+
+			> div {
+				z-index: 2;
+				position: relative;
+				padding-top: 50px;
+				padding-bottom: 50px;
+				@include adaptive(767) {
+					padding-bottom: 0;
+				}
+			}
+		}
+
+		&-right {
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+	}
+
+	&__title,
+	&__desc,
+	&__name {
+		text-align: center;
+		color: #ffffff;
+	}
+
+	&__title {
+		padding-bottom: 40px;
+		font-size: 45px;
+		font-weight: 300;
+		text-transform: uppercase;
+		@include adaptive(1439) {
+			font-size: 40px;
+		}
+		@include adaptive(1023) {
+			font-size: 35px;
+			text-align: center;
+		}
+		@include adaptive(575) {
+			font-size: 30px;
+		}
+	}
+
+	&__desc {
+		padding-bottom: 25px;
+		font-size: 25px;
+		@include adaptive(1279) {
+			font-size: 22px;
+		}
+		@include adaptive(767) {
+			font-size: 18px;
+		}
+	}
+
+	&__name {
+		font-size: 25px;
+		font-weight: 500;
+		font-style: italic;
+		@include adaptive(1279) {
+			font-size: 22px;
+		}
+		@include adaptive(767) {
+			font-size: 18px;
+		}
+	}
+
+	&__slider {
+		position: relative;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 15px;
+
+		&-btn {
+			z-index: 10;
+			position: absolute;
+			top: calc(50% - 30px);
+			transform: translateY(-50%);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			border: 1px solid #fff;
+			background-color: transparent;
+			font-size: 16px;
+			color: #ffffff;
+
+			&--prev {
+				left: 0;
+
+				.fas {
+					left: -1px;
+				}
+			}
+
+			&--next {
+				right: 0;
+
+				.fas {
+					right: -1px;
+				}
+			}
+
+			.fas {
+				position: relative;
+				color: #ffffff;
+			}
+		}
+	}
+
+	&__box {
+		overflow: hidden;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 170px;
+		width: 100%;
+		background-color: #ffffff;
+
+		&:hover {
+			img {
+				transform: scale(1.1);
+				@include transition(transform 0.55s);
+			}
+
+			.fas {
+				transform: scale(0.9);
+				@include transition(transform 0.55s);
+			}
+		}
+
+		img {
+			@extend %imageResCoverAbs;
+			backface-visibility: hidden;
+			transform-origin: center;
+			@include transition(transform 0.6s);
+		}
+
+		.fas {
+			z-index: 10;
+			position: absolute;
+			font-size: 60px;
+			color: #fff;
+			backface-visibility: hidden;
+			transform-origin: center;
+			@include transition(transform 0.6s);
+			@include adaptive(1365) {
+				font-size: 50px;
+			}
+		}
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 12px 24px;
+		background-color: rgba(0,0,0,0);
+		border-radius: 2em;
+		border-style: solid;
+		border-width: 2px;
+		border-color: #fff;
+		font-weight: 500;
+		font-size: 15px;
+		color: #fff;
+		@include transition(background-color, color);
+
+		&:hover {
+			background-color: #ffffff;
+			color: #5edc56;
+			@include transition(background-color, color);
+		}
+
+		&-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	.swiper {
+		&-container {
+			padding-bottom: 50px;
+		}
+
+		&-pagination {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&-bullet {
+				opacity: 1;
+				width: 6px;
+				height: 6px;
+				margin-left: 8px !important;
+				margin-right: 8px !important;
+				border-radius: 50%;
+				background-color: #47a641;
+				@include transition(background-color);
+
+				&-active {
+					background-color: #000000;
+					@include transition(background-color);
+				}
+			}
+		}
+	}
+}
+
+// SECTION say :: END

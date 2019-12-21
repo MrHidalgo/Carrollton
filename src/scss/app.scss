@@ -24,7 +24,7 @@
 @import "_shared/grid";
 @import "_shared/common";
 //@import "_shared/viewPortChecker";
-//@import "_shared/magnificPopup";
+@import "_shared/magnificPopup";
 //@import "_shared/swiper";
 //@import "_shared/objectFitImages";
 //@import "_shared/iconPNG";
@@ -46,5 +46,6 @@
 //@import "_components/header";
 @import "_components/footer";
 
+@import "_components/say";
 @import "_components/contacts";
 @import "_components/map";
