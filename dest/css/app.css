@@ -229,7 +229,14 @@ picture {
   color: #ffffff;
 }
 
-/* line 9, src/scss/_shared/_common.scss */
+@media screen and (max-width: 767px) {
+  /* line 4, src/scss/_shared/_common.scss */
+  .copyright__text {
+    text-align: center;
+  }
+}
+
+/* line 12, src/scss/_shared/_common.scss */
 .social {
   display: -webkit-box;
   display: -webkit-flex;
@@ -241,7 +248,17 @@ picture {
           align-items: center;
 }
 
-/* line 13, src/scss/_shared/_common.scss */
+@media screen and (max-width: 1023px) {
+  /* line 12, src/scss/_shared/_common.scss */
+  .social {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* line 19, src/scss/_shared/_common.scss */
 .social__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -269,12 +286,26 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 27, src/scss/_shared/_common.scss */
+@media screen and (max-width: 1023px) {
+  /* line 19, src/scss/_shared/_common.scss */
+  .social__btn {
+    margin-left: 5px;
+  }
+}
+
+/* line 36, src/scss/_shared/_common.scss */
 .social__btn:last-of-type {
   margin-right: 0;
 }
 
-/* line 32, src/scss/_shared/_common.scss */
+@media screen and (max-width: 1023px) {
+  /* line 36, src/scss/_shared/_common.scss */
+  .social__btn:last-of-type {
+    margin-right: 5px;
+  }
+}
+
+/* line 44, src/scss/_shared/_common.scss */
 .social__btn--facebook:hover {
   border-color: #3b5998;
   background-color: #3b5998;
@@ -283,7 +314,7 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 37, src/scss/_shared/_common.scss */
+/* line 49, src/scss/_shared/_common.scss */
 .social__btn--facebook:hover .fab {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -291,7 +322,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 44, src/scss/_shared/_common.scss */
+/* line 56, src/scss/_shared/_common.scss */
 .social__btn--twitter:hover {
   border-color: #1da1f2;
   background-color: #1da1f2;
@@ -300,7 +331,7 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 49, src/scss/_shared/_common.scss */
+/* line 61, src/scss/_shared/_common.scss */
 .social__btn--twitter:hover .fab {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -308,7 +339,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 56, src/scss/_shared/_common.scss */
+/* line 68, src/scss/_shared/_common.scss */
 .social__btn--instagram:hover {
   border-color: #e1306c;
   background-color: #e1306c;
@@ -317,7 +348,7 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 61, src/scss/_shared/_common.scss */
+/* line 73, src/scss/_shared/_common.scss */
 .social__btn--instagram:hover .fab {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -325,7 +356,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 68, src/scss/_shared/_common.scss */
+/* line 80, src/scss/_shared/_common.scss */
 .social__btn--youtube:hover {
   border-color: #ff0000;
   background-color: #ff0000;
@@ -334,7 +365,7 @@ picture {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 73, src/scss/_shared/_common.scss */
+/* line 85, src/scss/_shared/_common.scss */
 .social__btn--youtube:hover .fab {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -342,7 +373,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 80, src/scss/_shared/_common.scss */
+/* line 92, src/scss/_shared/_common.scss */
 .social__btn .fab {
   color: #071689;
   font-size: 16px;
@@ -363,11 +394,21 @@ picture {
           align-items: flex-start;
 }
 
-/* line 9, src/scss/_macros/_logotype.scss */
+/* line 12, src/scss/_macros/_logotype.scss */
 .logo__img {
   display: block;
   max-width: 348px;
   height: auto;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 12, src/scss/_macros/_logotype.scss */
+  .logo__img {
+    max-width: -webkit-calc(2048px / 10);
+    max-width: calc(2048px / 10);
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* line 3, src/scss/_components/_footer.scss */
@@ -381,6 +422,9 @@ picture {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -388,12 +432,28 @@ picture {
   height: 145px;
 }
 
-/* line 11, src/scss/_components/_footer.scss */
+@media screen and (max-width: 767px) {
+  /* line 6, src/scss/_components/_footer.scss */
+  .footer__wrapper {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+/* line 17, src/scss/_components/_footer.scss */
 .footer__wrapper-left, .footer__wrapper-right {
   width: 50%;
 }
 
-/* line 16, src/scss/_components/_footer.scss */
+@media screen and (max-width: 767px) {
+  /* line 17, src/scss/_components/_footer.scss */
+  .footer__wrapper-left, .footer__wrapper-right {
+    width: 100%;
+  }
+}
+
+/* line 25, src/scss/_components/_footer.scss */
 .footer__wrapper-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -403,6 +463,17 @@ picture {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 25, src/scss/_components/_footer.scss */
+  .footer__wrapper-right {
+    padding-top: 30px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 /* line 3, src/scss/_components/_map.scss */
@@ -421,6 +492,9 @@ picture {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -430,13 +504,28 @@ picture {
   padding-bottom: 50px;
 }
 
-/* line 17, src/scss/_components/_map.scss */
+@media screen and (max-width: 1024px) {
+  /* line 10, src/scss/_components/_map.scss */
+  .map__wrapper {
+    height: auto;
+  }
+}
+
+/* line 21, src/scss/_components/_map.scss */
 .map__wrapper-left {
   width: 100%;
   max-width: 70%;
 }
 
-/* line 21, src/scss/_components/_map.scss */
+@media screen and (max-width: 1024px) {
+  /* line 21, src/scss/_components/_map.scss */
+  .map__wrapper-left {
+    max-width: 100%;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 29, src/scss/_components/_map.scss */
 .map__wrapper-left iframe {
   display: -webkit-box;
   display: -webkit-flex;
@@ -446,14 +535,43 @@ picture {
   height: 340px;
 }
 
-/* line 28, src/scss/_components/_map.scss */
+/* line 36, src/scss/_components/_map.scss */
 .map__wrapper-right {
   width: 100%;
   max-width: 30%;
   padding-left: 30px;
 }
 
-/* line 35, src/scss/_components/_map.scss */
+@media screen and (max-width: 1024px) {
+  /* line 36, src/scss/_components/_map.scss */
+  .map__wrapper-right {
+    max-width: 100%;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 47, src/scss/_components/_map.scss */
+  .map__block {
+    width: 100%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 53, src/scss/_components/_map.scss */
+  .map__block-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+/* line 61, src/scss/_components/_map.scss */
 .map__title {
   padding-bottom: 20px;
   color: #3a3a3a;
@@ -462,7 +580,7 @@ picture {
   font-weight: 300;
 }
 
-/* line 42, src/scss/_components/_map.scss */
+/* line 68, src/scss/_components/_map.scss */
 .map__title .fas,
 .map__title .far {
   margin-right: 5px;
@@ -470,7 +588,7 @@ picture {
   font-size: 20px;
 }
 
-/* line 50, src/scss/_components/_map.scss */
+/* line 76, src/scss/_components/_map.scss */
 .map__desc {
   display: block;
   padding-bottom: 30px;
@@ -481,7 +599,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 57, src/scss/_components/_map.scss */
+/* line 83, src/scss/_components/_map.scss */
 .map__desc:hover {
   color: #000;
   -webkit-transition: color 0.3s ease-in-out;

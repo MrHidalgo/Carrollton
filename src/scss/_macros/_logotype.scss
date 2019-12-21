@@ -4,12 +4,20 @@
 	&__link {
 		display: flex;
 		align-items: flex-start;
+		@include adaptive(767) {
+
+		}
 	}
 
 	&__img {
 		display: block;
 		max-width: 348px;
 		height: auto;
+		@include adaptive(767) {
+			max-width: calc(2048px / 10);
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 }
 

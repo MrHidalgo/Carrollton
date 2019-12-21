@@ -3,12 +3,18 @@
 .copyright {
 	&__text {
 		color: #ffffff;
+		@include adaptive(767) {
+			text-align: center;
+		}
 	}
 }
 
 .social {
 	display: flex;
 	align-items: center;
+	@include adaptive(1023) {
+		justify-content: center;
+	}
 
 	&__btn {
 		display: flex;
@@ -23,9 +29,15 @@
 		border-color: #071689;
 		background-color: transparent;
 		@include transition(border-color, background-color);
+		@include adaptive(1023) {
+			margin-left: 5px;
+		}
 
 		&:last-of-type {
 			margin-right: 0;
+			@include adaptive(1023) {
+				margin-right: 5px;
+			}
 		}
 
 		&--facebook {

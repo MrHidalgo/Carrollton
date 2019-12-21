@@ -5,17 +5,30 @@
 
 	&__wrapper {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		height: 145px;
+		@include adaptive(767) {
+			height: auto;
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
 
 		&-left,
 		&-right {
 			width: 50%;
+			@include adaptive(767) {
+				width: 100%;
+			}
 		}
 
 		&-right {
 			display: flex;
 			justify-content: flex-end;
+			@include adaptive(767) {
+				padding-top: 30px;
+				justify-content: center;
+			}
 		}
 	}
 }
