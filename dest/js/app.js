@@ -39,6 +39,14 @@ var initHamburger = function initHamburger() {
       val.classList.toggle("is-hideScroll");
     });
   });
+  document.querySelector('.menu__close').addEventListener("click", function (ev) {
+    document.querySelector("[hamburger-js]").classList.remove("is-active");
+    mobileContainer.classList.remove("is-open");
+
+    hideScrollContainer.forEach(function (val, idx) {
+      val.classList.remove("is-hideScroll");
+    });
+  });
 };
 
 /**

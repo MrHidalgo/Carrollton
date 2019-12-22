@@ -25,5 +25,14 @@ const initHamburger = () => {
     });
 
   });
+	document.querySelector('.menu__close').addEventListener("click", (ev) => {
+		document.querySelector("[hamburger-js]").classList.remove("is-active");
+    mobileContainer.classList.remove("is-open");
+
+    hideScrollContainer.forEach((val, idx) => {
+      val.classList.remove("is-hideScroll");
+    });
+
+  });
 
 };
