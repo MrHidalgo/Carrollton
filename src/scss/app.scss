@@ -8,7 +8,7 @@
 ///
 /// VENDOR
 /// ===============
-//@import "_vendor/hamburger/_hamburgers";
+@import "_vendor/hamburger/_hamburgers";
 //@import "_vendor/selectric/_selectric";
 ///
 /// GENERATED
@@ -43,14 +43,14 @@
 ///
 /// COMPONENTS
 /// ===============
-//@import "_components/header";
+@import "_components/header";
 @import "_components/footer";
 
-@import "_components/main";
-@import "_components/option";
-@import "_components/services";
-@import "_components/meet";
-@import "_components/projects";
-@import "_components/say";
-@import "_components/contacts";
-@import "_components/map";
+@import "_components/homepage/main";
+@import "_components/homepage/option";
+@import "_components/homepage/services";
+@import "_components/homepage/meet";
+@import "_components/homepage/projects";
+@import "_components/homepage/say";
+@import "_components/homepage/contacts";
+@import "_components/homepage/map";

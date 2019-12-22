@@ -1,6 +1,17 @@
 // LOGOTYPE :: START
 
 .logo {
+	&.logo--header {
+		.logo {
+			&__img {
+				@include adaptive(767) {
+					max-width: calc(394px / 1.25);
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+		}
+	}
 	&.logo--footer {
 		.logo {
 			&__img {
@@ -22,7 +33,6 @@
 		display: block;
 		max-width: 348px;
 		height: auto;
-
 	}
 }
 

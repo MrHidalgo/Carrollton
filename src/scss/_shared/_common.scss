@@ -16,6 +16,19 @@
 		justify-content: center;
 	}
 
+	&--header {
+		.social {
+			&__btn {
+				width: 42px;
+				height: 42px;
+			}
+
+			.fab {
+				font-size: 18px;
+			}
+		}
+	}
+
 	&__btn {
 		display: flex;
 		align-items: center;
