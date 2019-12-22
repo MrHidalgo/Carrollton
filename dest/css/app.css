@@ -1339,6 +1339,7 @@ picture {
 }
 
 /* line 13, src/scss/_components/homepage/_main.scss */
+.main__video video,
 .main__video iframe {
   position: absolute;
   top: 0;
@@ -1351,20 +1352,20 @@ picture {
      object-position: center;
 }
 
-/* line 24, src/scss/_components/homepage/_main.scss */
+/* line 25, src/scss/_components/homepage/_main.scss */
 .main__image {
   display: none;
   height: 420px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 24, src/scss/_components/homepage/_main.scss */
+  /* line 25, src/scss/_components/homepage/_main.scss */
   .main__image {
     display: block;
   }
 }
 
-/* line 31, src/scss/_components/homepage/_main.scss */
+/* line 32, src/scss/_components/homepage/_main.scss */
 .main__image img {
   position: relative;
   display: block;
