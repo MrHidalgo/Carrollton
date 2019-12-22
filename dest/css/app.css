@@ -636,6 +636,59 @@ picture {
   }
 }
 
+/* line 4, src/scss/_components/_main.scss */
+.main__video {
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  padding-bottom: 56.25%;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 4, src/scss/_components/_main.scss */
+  .main__video {
+    display: none;
+  }
+}
+
+/* line 13, src/scss/_components/_main.scss */
+.main__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* line 24, src/scss/_components/_main.scss */
+.main__image {
+  display: none;
+  height: 420px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 24, src/scss/_components/_main.scss */
+  .main__image {
+    display: block;
+  }
+}
+
+/* line 31, src/scss/_components/_main.scss */
+.main__image img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 /* line 3, src/scss/_components/_option.scss */
 .option {
   padding-top: 15px;
