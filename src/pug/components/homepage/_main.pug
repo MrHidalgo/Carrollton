@@ -3,7 +3,6 @@
 section#main.main
 
 	.main__video
-		//video-main.mp4
 		video.lazyload(muted, autoplay, loop, data-poster='img/img-main-bg.png')
 			source(data-src='media/video-main.mp4', type='video/mp4')
 		//iframe(src='https://player.vimeo.com/video/353880566?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1',
@@ -13,6 +12,6 @@ section#main.main
 		//)
 
 	.main__image
-		img(src="img/img-main-bg.png" alt="")
+		img.lazyload(data-src="img/img-main-bg.jpg" alt="")
 
 // SECTION main :: END
