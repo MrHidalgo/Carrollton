@@ -1,0 +1,147 @@
+// SECTION services :: START
+
+.services {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #7a7a7a;
+
+	&__title {
+		padding-bottom: 25px;
+		text-align: center;
+	}
+
+	&__desc {
+		padding-bottom: 50px;
+		text-align: center;
+		color: #ffffff;
+		font-size: 25px;
+		@include adaptive(1279) {
+			font-size: 22px;
+		}
+		@include adaptive(767) {
+			font-size: 18px;
+		}
+	}
+
+
+	&__box {
+		background-color: transparent;
+		width: 100%;
+		perspective: 1000px;
+
+		&:hover {
+			.services__box-inner {
+				transform: rotateY(-180deg);
+			}
+		}
+
+		&-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			> div {
+				width: 100%;
+				max-width: calc((100% - 40px) / 3);
+				@include adaptive(767) {
+					max-width: 100%;
+					padding-bottom: 40px;
+				}
+			}
+		}
+
+		&-title {
+			padding-top: 30px;
+			text-align: center;
+			color: #ffffff;
+			font-size: 30px;
+			font-weight: 600;
+			@include adaptive(1279) {
+				font-size: 26px;
+			}
+			@include adaptive(767) {
+				font-size: 22px;
+			}
+		}
+
+		&-inner {
+			position: relative;
+			width: 100%;
+			height: 280px;
+			text-align: center;
+			transition: transform 0.75s ease-in-out;
+			transform-style: preserve-3d;
+			@include adaptive(767) {
+				height: 250px;
+			}
+		}
+
+		&-front,
+		&-back {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			backface-visibility: hidden;
+		}
+
+		&-front {
+			overflow: hidden;
+			position: relative;
+			background-color: #fff;
+			transform-style: preserve-3d;
+			backface-visibility: hidden;
+
+			img {
+				@extend %imageResCoverAbs;
+			}
+		}
+
+		&-back {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 35px;
+			background-color: #b7b4b4;
+			transform: rotateY(180deg);
+			transform-style: preserve-3d;
+			color: white;
+
+			p {
+				padding-bottom: 20px;
+				font-size: 21px;
+				font-weight: 600;
+				color: #fff;
+				@include adaptive(767) {
+					font-size: 19px;
+				}
+			}
+
+			span {
+				padding-bottom: 20px;
+				color: #fff;
+				font-size: 20px;
+				font-weight: 600;
+				@include adaptive(767) {
+					font-size: 18px;
+				}
+			}
+
+			a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 12px 24px;
+				border-radius: 3px;
+				background-color: #818a91;
+				color: #fff;
+				font-weight: 600;
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+// SECTION services :: END

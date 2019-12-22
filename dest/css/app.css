@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
 /* line 14, src/scss/_utilities/_extend.scss */
-.meet__video iframe, .meet__block-icon img, .projects__block-left img, .say__box img {
+.services__box-front img, .meet__video iframe, .meet__block-icon img, .projects__block-left img, .say__box img {
   position: absolute;
   top: 0;
   left: 0;
@@ -634,6 +634,233 @@ picture {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+/* line 3, src/scss/_components/_services.scss */
+.services {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #7a7a7a;
+}
+
+/* line 8, src/scss/_components/_services.scss */
+.services__title {
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+/* line 13, src/scss/_components/_services.scss */
+.services__desc {
+  padding-bottom: 50px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 13, src/scss/_components/_services.scss */
+  .services__desc {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 13, src/scss/_components/_services.scss */
+  .services__desc {
+    font-size: 18px;
+  }
+}
+
+/* line 27, src/scss/_components/_services.scss */
+.services__box {
+  background-color: transparent;
+  width: 100%;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+/* line 33, src/scss/_components/_services.scss */
+.services__box:hover .services__box-inner {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+/* line 38, src/scss/_components/_services.scss */
+.services__box-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 43, src/scss/_components/_services.scss */
+.services__box-wrapper > div {
+  width: 100%;
+  max-width: -webkit-calc((100% - 40px) / 3);
+  max-width: calc((100% - 40px) / 3);
+}
+
+@media screen and (max-width: 767px) {
+  /* line 43, src/scss/_components/_services.scss */
+  .services__box-wrapper > div {
+    max-width: 100%;
+    padding-bottom: 40px;
+  }
+}
+
+/* line 53, src/scss/_components/_services.scss */
+.services__box-title {
+  padding-top: 30px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 53, src/scss/_components/_services.scss */
+  .services__box-title {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 53, src/scss/_components/_services.scss */
+  .services__box-title {
+    font-size: 22px;
+  }
+}
+
+/* line 67, src/scss/_components/_services.scss */
+.services__box-inner {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.75s ease-in-out;
+  transition: -webkit-transform 0.75s ease-in-out;
+  -o-transition: transform 0.75s ease-in-out;
+  transition: transform 0.75s ease-in-out;
+  transition: transform 0.75s ease-in-out, -webkit-transform 0.75s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 67, src/scss/_components/_services.scss */
+  .services__box-inner {
+    height: 250px;
+  }
+}
+
+/* line 79, src/scss/_components/_services.scss */
+.services__box-front, .services__box-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+/* line 89, src/scss/_components/_services.scss */
+.services__box-front {
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+/* line 101, src/scss/_components/_services.scss */
+.services__box-back {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 35px;
+  background-color: #b7b4b4;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  color: white;
+}
+
+/* line 112, src/scss/_components/_services.scss */
+.services__box-back p {
+  padding-bottom: 20px;
+  font-size: 21px;
+  font-weight: 600;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 112, src/scss/_components/_services.scss */
+  .services__box-back p {
+    font-size: 19px;
+  }
+}
+
+/* line 122, src/scss/_components/_services.scss */
+.services__box-back span {
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 122, src/scss/_components/_services.scss */
+  .services__box-back span {
+    font-size: 18px;
+  }
+}
+
+/* line 132, src/scss/_components/_services.scss */
+.services__box-back a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 12px 24px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #818a91;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 /* line 3, src/scss/_components/_meet.scss */
@@ -1968,16 +2195,13 @@ picture {
 }
 
 /* line 29, src/scss/_components/_map.scss */
-.map__wrapper-left iframe {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 340px;
+.map__wrapper-left img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-/* line 36, src/scss/_components/_map.scss */
+/* line 42, src/scss/_components/_map.scss */
 .map__wrapper-right {
   width: 100%;
   max-width: 30%;
@@ -1985,7 +2209,7 @@ picture {
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 36, src/scss/_components/_map.scss */
+  /* line 42, src/scss/_components/_map.scss */
   .map__wrapper-right {
     max-width: 100%;
     padding-left: 0;
@@ -1993,7 +2217,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 47, src/scss/_components/_map.scss */
+  /* line 53, src/scss/_components/_map.scss */
   .map__block {
     width: 100%;
     max-width: 50%;
@@ -2001,14 +2225,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 47, src/scss/_components/_map.scss */
+  /* line 53, src/scss/_components/_map.scss */
   .map__block {
     max-width: 100%;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 56, src/scss/_components/_map.scss */
+  /* line 62, src/scss/_components/_map.scss */
   .map__block-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2020,7 +2244,7 @@ picture {
   }
 }
 
-/* line 64, src/scss/_components/_map.scss */
+/* line 70, src/scss/_components/_map.scss */
 .map__title {
   padding-bottom: 20px;
   color: #3a3a3a;
@@ -2030,13 +2254,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 64, src/scss/_components/_map.scss */
+  /* line 70, src/scss/_components/_map.scss */
   .map__title {
     text-align: center;
   }
 }
 
-/* line 74, src/scss/_components/_map.scss */
+/* line 80, src/scss/_components/_map.scss */
 .map__title .fas,
 .map__title .far {
   margin-right: 5px;
@@ -2044,7 +2268,7 @@ picture {
   font-size: 20px;
 }
 
-/* line 82, src/scss/_components/_map.scss */
+/* line 88, src/scss/_components/_map.scss */
 .map__desc {
   display: block;
   padding-bottom: 30px;
@@ -2056,13 +2280,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 82, src/scss/_components/_map.scss */
+  /* line 88, src/scss/_components/_map.scss */
   .map__desc {
     text-align: center;
   }
 }
 
-/* line 90, src/scss/_components/_map.scss */
+/* line 96, src/scss/_components/_map.scss */
 w .map__desc:hover {
   color: #000;
   -webkit-transition: color 0.3s ease-in-out;
