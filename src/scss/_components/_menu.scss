@@ -12,7 +12,7 @@
 	width: 500px;
 	height: 100vh;
 	padding: 50px 30px;
-	background-color: #FFF;
+	background-color: #08158a;
 	box-shadow: 5px 0 10px 0 rgba(#000, 0.15);
 	@include adaptive(575) {
 		width: 90%;
@@ -40,7 +40,7 @@
 		}
 
 		.fas {
-			color: #333333;
+			color: #fff;
 			font-size: 16px;
 		}
 	}
@@ -50,19 +50,19 @@
 		align-items: center;
 		min-height: 45px;
 		padding-left: 15px;
-		border-bottom: 1px solid #ccc;
+		border-bottom: 1px solid #fff;
 		font-size: 16px;
 		font-weight: 600;
-		color: #333333;
-		@include transition(background-color, border-color, color);
+		color: #fff;
+		@include transition(opacity);
 
 		&:hover {
-			border-color: #08158a;
-			color: #08158a;
-			@include transition(background-color, border-color, color);
+			opacity: 0.75;
+			color: #fff;
+			@include transition(opacity);
 
 			.fas {
-				color: #08158a;
+				color: #fff;
 				@include transition(transform, color);
 			}
 		}
@@ -71,7 +71,7 @@
 			justify-content: space-between;
 
 			.fas {
-				color: #333333;
+				color: #fff;
 				font-size: 12px;
 				transform: scale(-1);
 				backface-visibility: hidden;
@@ -95,6 +95,11 @@
 
 	&__collapse {
 		padding-left: 15px;
+		background-color: darken(#08158a, 7%);
+
+		.menu__btn {
+			padding-right: 15px;
+		}
 	}
 }
 

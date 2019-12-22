@@ -1165,7 +1165,7 @@ picture {
   width: 500px;
   height: 100vh;
   padding: 50px 30px;
-  background-color: #FFF;
+  background-color: #08158a;
   -webkit-box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.15);
 }
@@ -1222,7 +1222,7 @@ picture {
 
 /* line 42, src/scss/_components/_menu.scss */
 .menu__close .fas {
-  color: #333333;
+  color: #fff;
   font-size: 16px;
 }
 
@@ -1238,27 +1238,27 @@ picture {
           align-items: center;
   min-height: 45px;
   padding-left: 15px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
   font-size: 16px;
   font-weight: 600;
-  color: #333333;
-  -webkit-transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  color: #fff;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 /* line 59, src/scss/_components/_menu.scss */
 .menu__btn:hover {
-  border-color: #08158a;
-  color: #08158a;
-  -webkit-transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  opacity: 0.75;
+  color: #fff;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 /* line 64, src/scss/_components/_menu.scss */
 .menu__btn:hover .fas {
-  color: #08158a;
+  color: #fff;
   -webkit-transition: color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   transition: color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   -o-transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -1276,7 +1276,7 @@ picture {
 
 /* line 73, src/scss/_components/_menu.scss */
 .menu__btn--collapse .fas {
-  color: #333333;
+  color: #fff;
   font-size: 12px;
   -webkit-transform: scale(-1);
       -ms-transform: scale(-1);
@@ -1321,6 +1321,12 @@ picture {
 /* line 96, src/scss/_components/_menu.scss */
 .menu__collapse {
   padding-left: 15px;
+  background-color: #061068;
+}
+
+/* line 100, src/scss/_components/_menu.scss */
+.menu__collapse .menu__btn {
+  padding-right: 15px;
 }
 
 /* line 4, src/scss/_components/homepage/_main.scss */
