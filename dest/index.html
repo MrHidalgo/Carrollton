@@ -45,8 +45,8 @@
       <section class="main" id="main">
         <div class="main__video">
           <!--video-main.mp4-->
-          <video muted autoplay loop poster="img/img-main-bg.png">
-            <source src="media/video-main.mp4" type="video/mp4">
+          <video class="lazyload" muted autoplay loop data-poster="img/img-main-bg.png">
+            <source data-src="media/video-main.mp4" type="video/mp4">
           </video>
           <!--iframe(src='https://player.vimeo.com/video/353880566?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1',-->
           <!--	frameborder='0'-->
@@ -76,7 +76,7 @@
               <div>
                 <div class="services__box">
                   <div class="services__box-inner">
-                    <div class="services__box-front"><img src="img/img-services-1.jpeg" alt=""></div>
+                    <div class="services__box-front"><img class="lazyload" data-src="img/img-services-1.jpeg" alt=""></div>
                     <div class="services__box-back">
                       <p>Sleep Apnea</p><span>Having trouble sleeping? Do you snore loud?</span><a href="#">Learn More</a>
                     </div>
@@ -87,7 +87,7 @@
               <div>
                 <div class="services__box">
                   <div class="services__box-inner">
-                    <div class="services__box-front"><img src="img/img-services-2.jpg" alt=""></div>
+                    <div class="services__box-front"><img class="lazyload" data-src="img/img-services-2.jpg" alt=""></div>
                     <div class="services__box-back">
                       <p>Dental Ozone</p><span>Sterilizing and disinfection has never been easier.</span><a href="#">Learn More</a>
                     </div>
@@ -98,7 +98,7 @@
               <div>
                 <div class="services__box">
                   <div class="services__box-inner">
-                    <div class="services__box-front"><img src="img/img-services-3.jpeg" alt=""></div>
+                    <div class="services__box-front"><img class="lazyload" data-src="img/img-services-3.jpeg" alt=""></div>
                     <div class="services__box-back">
                       <p>Invisalign</p><span>Straightening your teeth now has a clear solution</span><a href="#">Learn More</a>
                     </div>
@@ -118,7 +118,7 @@
             <div class="meet__wrapper-left">
               <h2 class="meet__title c-title c-title--black">MEET YOUR DENTIST</h2>
               <div class="meet__video">
-                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://player.vimeo.com/video/373000630?color&amp;autopause=0&amp;loop=0&amp;muted=0&amp;title=1&amp;portrait=1&amp;byline=1#t="></iframe>
+                <iframe class="lazyload" data-src="https://player.vimeo.com/video/373000630?color&amp;autopause=0&amp;loop=0&amp;muted=0&amp;title=1&amp;portrait=1&amp;byline=1#t=" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
               </div>
             </div>
             <div class="meet__wrapper-right">
@@ -127,7 +127,7 @@
               <div class="meet__block">
                 <div class="meet__block-head">
                   <div>
-                    <div class="meet__block-icon"><img src="img/img-user.jpg" alt=""></div>
+                    <div class="meet__block-icon"><img class="lazyload" data-src="img/img-user.jpg" alt=""></div>
                   </div>
                   <div>
                     <p>Dr. Sirisha Bhandaru</p>
@@ -151,7 +151,7 @@
             <h2 class="projects__title c-title">OUR PROJECTS</h2>
             <p class="projects__desc">We believe in helping you improve overall health with Oral health being our field of expertise.</p>
             <div class="projects__block-wrapper">
-              <div class="projects__block-left"><img src="img/img-projects.jpg" alt=""></div>
+              <div class="projects__block-left"><img class="lazyload" data-src="img/img-projects.jpg" alt=""></div>
               <div class="projects__block-right">
                 <div class="projects__slider"><a class="projects__slider-btn projects__slider-btn--prev" href="#"><i class="fas fa-chevron-left"></i></a><a class="projects__slider-btn projects__slider-btn--next" href="#"><i class="fas fa-chevron-right"></i></a>
                   <div class="swiper-container projectSlider">
@@ -251,7 +251,7 @@
       <section class="map" id="map">
         <div class="c-grid">
           <div class="map__wrapper d-flex flex-wrap align-items-center">
-            <div class="map__wrapper-left"><img src="img/img-map.png" alt="">
+            <div class="map__wrapper-left"><img class="lazyload" data-src="img/img-map.png" alt="">
               <!--iframe(frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?q=Carrollton%20smiles%201735%20Keller%20Springs%20Rd%2C%20Suite%20204%20Carrollton%2C%20TX%2075006&t=m&z=10&output=embed&iwloc=near')-->
             </div>
             <div class="map__wrapper-right">

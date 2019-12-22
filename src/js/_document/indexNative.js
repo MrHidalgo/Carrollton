@@ -6,7 +6,9 @@
 	* =============================================
 	* CALLBACK :: start
 	* ============================================= */
-
+	const lazyLoadInstance = new LazyLoad({
+		elements_selector: ".lazyload"
+	});
 	/*
 	* CALLBACK :: end
 	* ============================================= */

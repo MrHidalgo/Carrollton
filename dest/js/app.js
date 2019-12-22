@@ -253,7 +253,9 @@ var initSwiper = function initSwiper() {
   * =============================================
   * CALLBACK :: start
   * ============================================= */
-
+  var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazyload"
+  });
   /*
   * CALLBACK :: end
   * ============================================= */

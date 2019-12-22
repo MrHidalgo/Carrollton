@@ -8,7 +8,7 @@ section#meet.meet
 				h2.meet__title.c-title.c-title--black MEET YOUR DENTIST
 
 				.meet__video
-					iframe(frameborder='0', scrolling='no', marginheight='0', marginwidth='0' src='https://player.vimeo.com/video/373000630?color&autopause=0&loop=0&muted=0&title=1&portrait=1&byline=1#t=')
+					iframe.lazyload(data-src='https://player.vimeo.com/video/373000630?color&autopause=0&loop=0&muted=0&title=1&portrait=1&byline=1#t=' frameborder='0', scrolling='no', marginheight='0', marginwidth='0')
 
 			.meet__wrapper-right
 
@@ -19,7 +19,7 @@ section#meet.meet
 					.meet__block-head
 						div
 							.meet__block-icon
-								img(src="img/img-user.jpg" alt="")
+								img.lazyload(data-src="img/img-user.jpg" alt="")
 						div
 							p Dr. Sirisha Bhandaru
 						div
