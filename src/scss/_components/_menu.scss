@@ -1,0 +1,78 @@
+// SECTION menu :: START
+
+.menu {
+	z-index: 1000;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateX(-100%);
+	overflow-y: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 500px;
+	height: 100vh;
+	padding: 50px 30px;
+	background-color: #FFF;
+	box-shadow: 5px 0 10px 0 rgba(#000, 0.15);
+
+	&.is-open {
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(0);
+		@include transition(opacity, visibility, transform);
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		min-height: 45px;
+		padding-left: 15px;
+		border-bottom: 1px solid #ccc;
+		font-size: 16px;
+		font-weight: 600;
+		color: #333333;
+		@include transition(background-color, border-color, color);
+
+		&:hover {
+			border-color: #08158a;
+			color: #08158a;
+			@include transition(background-color, border-color, color);
+
+			.fas {
+				color: #08158a;
+				@include transition(transform, color);
+			}
+		}
+
+		&--collapse {
+			justify-content: space-between;
+
+			.fas {
+				color: #333333;
+				font-size: 12px;
+				transform: scale(-1);
+				backface-visibility: hidden;
+				transform-origin: center;
+				@include transition(transform, color);
+			}
+		}
+
+		&.collapsed {
+			.fas {
+				transform: scale(1);
+				@include transition(transform);
+			}
+		}
+
+		&-wrapper {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&__collapse {
+		padding-left: 15px;
+	}
+}
+
+// SECTION menu :: END

@@ -5,9 +5,6 @@
 	padding-bottom: 50px;
 
 	&__wrapper {
-		display: flex;
-		flex-wrap: wrap;
-
 		&-left {
 			width: 100%;
 			max-width: calc(100% - 680px);
