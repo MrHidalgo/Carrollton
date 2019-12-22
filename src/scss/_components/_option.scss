@@ -1,0 +1,61 @@
+// SECTION option :: START
+
+.option {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	@include adaptive(1023) {
+		padding-bottom: 5px;
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 180px;
+		max-width: 280px;
+		padding: 6px 24px;
+		margin-left: 5px;
+		margin-right: 5px;
+		background-color: rgba(0,0,0,0);
+		border-radius: 25px;
+		border-style: solid;
+		border-width: 2px;
+		border-color: #39d52d;
+		text-align: center;
+		font-size: 21px;
+		font-weight: 600;
+		color: #39d52d;
+		@include transition(background-color, color);
+		@include adaptive(1023) {
+			width: 100%;
+			max-width: calc((100% - 20px) / 2);
+			margin-bottom: 10px;
+		}
+		@include adaptive(767) {
+			max-width: 100%;
+			min-height: 60px;
+			padding-left: 12px;
+			padding-right: 12px;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 16px;
+		}
+
+		&:hover {
+			background-color: #39d52d;
+			color: #fff;
+			@include transition(background-color, color);
+		}
+
+		&-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			@include adaptive(1023) {
+				flex-wrap: wrap;
+			}
+		}
+	}
+}
+
+// SECTION option :: END

@@ -636,6 +636,110 @@ picture {
   }
 }
 
+/* line 3, src/scss/_components/_option.scss */
+.option {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 3, src/scss/_components/_option.scss */
+  .option {
+    padding-bottom: 5px;
+  }
+}
+
+/* line 10, src/scss/_components/_option.scss */
+.option__btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 180px;
+  max-width: 280px;
+  padding: 6px 24px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #39d52d;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 600;
+  color: #39d52d;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 10, src/scss/_components/_option.scss */
+  .option__btn {
+    width: 100%;
+    max-width: -webkit-calc((100% - 20px) / 2);
+    max-width: calc((100% - 20px) / 2);
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 10, src/scss/_components/_option.scss */
+  .option__btn {
+    max-width: 100%;
+    min-height: 60px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+  }
+}
+
+/* line 44, src/scss/_components/_option.scss */
+.option__btn:hover {
+  background-color: #39d52d;
+  color: #fff;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 50, src/scss/_components/_option.scss */
+.option__btn-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 50, src/scss/_components/_option.scss */
+  .option__btn-wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
 /* line 3, src/scss/_components/_services.scss */
 .services {
   padding-top: 50px;
